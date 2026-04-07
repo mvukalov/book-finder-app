@@ -1,60 +1,55 @@
-📚 Book Finder App
-A web application that allows users to search for books, explore top-rated titles, and track their personal reading list.
+# 📚 Book Finder App
+
+A web application that allows users to search for books, explore top-rated titles, and manage their personal reading list.
 
 This project was built for educational and portfolio purposes to practice modern React development, custom hooks, API integration, and state management.
 
-🚀 Live Demo
-👉 (add your Netlify/Vercel link here)
+---
 
-✨ Features
-Search books using Google Books API
-Display top-rated books by default
-View detailed book information
-Add books to personal "read" list
-Rate books with a custom star rating system
-Persistent data using Local Storage
-Delete books from your list
-Responsive and modern UI
-Keyboard shortcuts (e.g. Enter, Escape)
-Smooth UX with loading and error states
+## 🚀 Live Demo
 
-🛠 Tech Stack
-React (Hooks, Functional Components)
-JavaScript (ES6+)
-HTML5
-CSS3
-Google Books API
-Local Storage API
+👉 https://book-finder-app-mv.netlify.app/
 
-📦 Run Locally
-Clone the repository:
+---
 
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+## ✨ Features
 
-Navigate into the project folder:
+- Search books using Google Books API
+- Display top-rated books by default
+- View detailed book information
+- Add books to personal "read" list
+- Rate books using a custom star rating component
+- Persistent data using Local Storage
+- Delete books from the list
+- Responsive and modern UI
+- Keyboard interactions (Enter to focus search, Escape to close details)
+- Loading and error state handling
 
-cd YOUR_REPO
+---
 
-Install dependencies:
+## 🛠 Tech Stack
 
-npm install
+- React (Hooks, Functional Components)
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Google Books API
+- Local Storage API
 
-Create a `.env` file in the root and add:
+## ⚙️ How It Works
 
-REACT_APP_GOOGLE_BOOKS_KEY=your_api_key_here
+1. The app fetches data from the Google Books API.
+2. If no search query is entered, it displays a curated list of top books.
+3. When the user types at least 3 characters, a search request is triggered.
+4. Selecting a book loads detailed information.
+5. Users can rate and add books to their personal list.
+6. The list is stored in Local Storage and persists after reload.
 
-Start the development server:
+---
 
-npm start
+## 📁 Project Structure
 
-⚙️ How It Works
-The app fetches data from the Google Books API. :contentReference[oaicite:0]{index=0}  
-If no search query is provided, it displays a curated list of top books. :contentReference[oaicite:1]{index=1}  
-Users can search books dynamically based on input. :contentReference[oaicite:2]{index=2}  
-Selecting a book fetches detailed information and displays it. :contentReference[oaicite:3]{index=3}  
-Users can rate and save books to a personal list stored in Local Storage. :contentReference[oaicite:4]{index=4}  
-
-📁 Project Structure
+```
 Book_Finder/
 ├── src/
 │   ├── App.js
@@ -70,12 +65,22 @@ Book_Finder/
 ├── .env
 ├── package.json
 └── README.md
+```
 
-📡 External APIs & Libraries
-Google Books API — https://developers.google.com/books
+---
 
-👤 Author
+## 📡 External APIs & Libraries
+
+- Google Books API — https://developers.google.com/books
+
+---
+
+## 👤 Author
+
 Martin Vukalović
 
-📄 License
+---
+
+## 📄 License
+
 This project is intended for educational and portfolio purposes.
